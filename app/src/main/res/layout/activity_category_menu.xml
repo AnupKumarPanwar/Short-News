@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryMenu">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_search_black_24dp"/>
+
+    <EditText
+        android:inputType="textUri"
+        android:paddingLeft="50dp"
+        android:hint="Search News"
+        android:id="@+id/search_bar"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+
+    </EditText>
+
+    <ScrollView
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <requestFocus/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/generalNews"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/news"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top News"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/businessNews"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/business"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Business"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/entertainmentNews"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:contentPadding="20dp"
+            android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+            app:cardElevation="5dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/entertainment"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entertainment"
+                        android:gravity="center|bottom"/>
+
+                </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/healthNews"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/health"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Health"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/scienceNews"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/science"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Science"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sportsNews"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sports"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sports"
+                        android:gravity="center|bottom"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/techNews"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tech"/>
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Technology"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/changeLocation"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/placeholder"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Location"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/rate"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:contentPadding="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/thumbsup"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rate Us"
+                        android:gravity="center|bottom"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/images"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:textSize="20dp"
+                android:text="Hello"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="MORE AT BBC INDIA"
+                android:layout_marginTop="5dp"/>
+
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView_link2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:paddingTop="20dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="MORE AT BBC INDIA"-->
+                <!--android:layout_marginTop="10dp"/>-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView_link3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="MORE AT BBC INDIA"/>-->
+
+
+            <TextView
+                android:textColor="#2222a1"
+                android:id="@+id/textView_link"
+                android:layout_width="wrap_content"
+                android:padding="20dp"
+                android:textSize="12dp"
+                android:layout_height="wrap_content"
+                android:text="MORE AT BBC INDIA"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/share"
+            android:layout_marginBottom="55dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_share_black_24dp"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/menu"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_menu_black_24dp"/>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
+
+
