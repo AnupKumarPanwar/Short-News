@@ -8,4 +8,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="admob_app_id">ca-app-pub-3971583580619783~6316622155</string>
+    <string name="admob_banner">Notifications</string>
+    <string name="admob_interstitial">Notifications</string>
 </resources>

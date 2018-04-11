@@ -55,7 +55,7 @@ public class VerticlePagerAdapter extends PagerAdapter {
         mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         mInterstitialAd = new InterstitialAd(mContext);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3971583580619783/9270088554");
+        mInterstitialAd.setAdUnitId(mContext.getResources().getString(R.string.admob_interstitial));
 
         try {
             jsonObject= new JSONObject(response);

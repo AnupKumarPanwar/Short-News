@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences= PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         editor=sharedPreferences.edit();
 
-        MobileAds.initialize(this, "ca-app-pub-3971583580619783~6316622155");
+//        MobileAds.initialize(this, "ca-app-pub-3971583580619783~6316622155");
+        MobileAds.initialize(this, getResources().getString(R.string.admob_app_id));
 
         progressBar=(ProgressBar)findViewById(R.id.progress_bar);
         loading=(TextView)findViewById(R.id.loading);
