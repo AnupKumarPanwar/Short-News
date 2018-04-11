@@ -234,7 +234,7 @@ public class VerticlePagerAdapter extends PagerAdapter {
         intent.setType("image/*");
 
         intent.putExtra(android.content.Intent.EXTRA_SUBJECT, mContext.getString(R.string.app_name));
-        intent.putExtra(android.content.Intent.EXTRA_TEXT, "Download "+mContext.getString(R.string.app_name)+" - The #1 News App.\nhttps://play.google.com/store/apps/details?id=com.quiz.triviazq");
+        intent.putExtra(android.content.Intent.EXTRA_TEXT, "Download "+mContext.getString(R.string.app_name)+" - The #1 News App.\nhttps://play.google.com/store/apps/details?id=com.newsupdates.headlines");
         intent.putExtra(Intent.EXTRA_STREAM, uri);
         try {
             mContext.startActivity(Intent.createChooser(intent, "Share score"));
